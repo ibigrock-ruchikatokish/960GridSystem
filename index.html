@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<base target="_self">
 	<title> 
 		Online Book Store
 	</title>
@@ -14,8 +13,7 @@
 	<link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Allerta">	
 	<link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Allan">	
-		  
+          href="https://fonts.googleapis.com/css?family=Allan">	  
 	</head>
 <body>
 <div>
@@ -26,6 +24,8 @@
 		<nav id="nav">
 			<ul id="ul-main-menu"> 
 				<li class="main-menu"><a href="#about-section-image-1" target="_self"> ABOUT US </a>
+				<ul>
+				</ul>
 				</li>
 				<li class="main-menu"><a href="#new-arrival-section" target="_self"> NEW ARRIVALS </a>
 					<ul class="ul-sub-menu">
@@ -108,6 +108,8 @@
 					</ul>
 				</li>
 				<li class="main-menu"><a href="#write-to-us" target="_self"> WRITE TO US </a> 
+				<ul>
+				</ul>
 				</li>
 			</ul>	
 		</nav>
@@ -125,32 +127,32 @@
 			<hr>
 		</div>
 		<div id="new-arrival-list">
-			<a href="#" class="previous" >&#8249;</a>
+			<button class="previous" >&#10094;</button>
 				<a href="#" class="new-arrivals">
 					<figure>
-						<img src="images/TheFix.jpg" alt="The Fix"/>
+						<img src="images/TheFix.jpg" alt="The Fix" class="img-new-arrivals"/>
 						<figcaption>The Fix</figcaption>
 					</figure>	
 				</a>
 				<a href="#" class="new-arrivals">
 					<figure>
-						<img src="images/AnythingIsPossible.jpg" alt="Anything Is Possible" />
+						<img src="images/AnythingIsPossible.jpg" alt="Anything Is Possible" class="img-new-arrivals"/>
 						<figcaption>Anything Is Possible</figcaption>
 					</figure>	
 				</a>
 				<a href="#" class="new-arrivals">
 					<figure>
-						<img src="images/NightSchool.jpg" alt="Night School" />
+						<img src="images/NightSchool.jpg" alt="Night School" class="img-new-arrivals"/>
 						<figcaption>Night School</figcaption>
 					</figure>	
 				</a>
 				<a href="#" class="new-arrivals">
 					<figure>
-						<img src="images/TheWhistler.jpg" alt="The Whistler" />
+						<img src="images/TheWhistler.jpg" alt="The Whistler" class="img-new-arrivals" />
 						<figcaption>The Whistler</figcaption>
 					</figure>
 				</a>
-			<a href="#" class="next">&#8250;</a>	
+			<button class="next" >&#10095;</button>	
 		</div>
 	</section>
 	
@@ -160,38 +162,38 @@
 			<hr>
 		</div>
 		<div id="best-seller-list">
-			<a href="#" class="previous">&#8249;</a>
+			<button class="previous" >&#10094;</button>
 				<a href="#" class="best-sellers">
 					<figure>
-						<img src="images/TheLostOrder.jpg" alt="The Lost Order" />
+						<img src="images/TheLostOrder.jpg" alt="The Lost Order" class="img-best-sellers" />
 						<figcaption>The Lost Order</figcaption>
 					</figure>	
 				</a>
 				<a href="#" class="best-sellers">
 					<figure>
-						<img src="images/Magic.jpg" alt="Magic" />
+						<img src="images/Magic.jpg" alt="Magic" class="img-best-sellers" />
 						<figcaption>Magic</figcaption>
 					</figure>	
 				</a>
 				<a href="#" class="best-sellers">
 					<figure>
-						<img src="images/HarryPotterAndTheCursedChild.jpg" alt="Harry Potter And The Cursed Child" />
+						<img src="images/HarryPotterAndTheCursedChild.jpg" alt="Harry Potter And The Cursed Child" class="img-best-sellers" />
 						<figcaption>Harry Potter And The Cursed Child</figcaption>
 					</figure>	
 				</a>
 				<a href="#" class="best-sellers">
 					<figure>
-						<img src="images/1984GeorgeOrwell.jpg" alt="1984"/>
+						<img src="images/1984GeorgeOrwell.jpg" alt="1984" class="img-best-sellers" />
 						<figcaption>1984</figcaption>
 					</figure>	
 				</a>
 				<a href="#" class="best-sellers">
 					<figure>
-						<img src="images/KaneAndAbel.jpg" alt="Kane And Abel" />
+						<img src="images/KaneAndAbel.jpg" alt="Kane And Abel" class="img-best-sellers"/>
 						<figcaption>Kane And Abel</figcaption>
 					</figure>	
 				</a>
-			<a href="#" class="next">&#8250;</a>
+			<button class="next" >&#10095;</button>
 		</div> 
 	</section> 
 	<section class="grid_12" id="combined-section-1">
@@ -201,32 +203,38 @@
 			<hr>
 		</div>
 		<div id="our-collection-list">
-			<a href="#" class="previous" >&#8249;</a>
+			<button class="previous" >&#10094;</button>
 				<a href="#" class="our-collection">
 					<figure>
-						<img src="images/HarryPotterAndTheDeathlyHallows.jpg" alt="Harry Potter" />
+						<img src="images/HarryPotterAndTheDeathlyHallows.jpg" alt="Harry Potter" class="img-our-collection"/>
 						<figcaption>Harry Potter</figcaption>
 					</figure>	
 				</a>
 				<a href="#" class="our-collection">
 					<figure>
-						<img src="images/SherlockHolmes.jpg" alt="Sherlock Holmes" />
+						<img src="images/SherlockHolmes.jpg" alt="Sherlock Holmes" class="img-our-collection" />
 						<figcaption>Sherlock Holmes</figcaption>
 					</figure>	
 				</a>
 				<a href="#" class="our-collection">
 					<figure>
-						<img src="images/TheTarget.jpg" alt="David Baldacci" />
-						<figcaption>David Baldacci</figcaption>
+						<img src="images/TheChroniclesOfNarnia.jpg" alt="The Chronicles Of Narnia" class="img-our-collection" />
+						<figcaption>The Chronicles Of Narnia</figcaption>
 					</figure>	
 				</a>
 				<a href="#" class="our-collection">
 					<figure>
-						<img src="images/TheFirm.jpg" alt="The Firm" />
-						<figcaption>The Firm</figcaption>
+						<img src="images/TheHungerGames.jpg" alt="The Hunger Games" class="img-our-collection" />
+						<figcaption>The Hunger Games</figcaption>
 					</figure>
 				</a>
-			<a href="#" class="next">&#8250;</a>	
+				<!-- <a href="#" class="our-collection"> -->
+					<!-- <figure> -->
+						<!-- <img src="images/DanBrown-DaVinciCode.jpg" alt="Dan Brown" class="img-our-collection" /> -->
+						<!-- <figcaption>Dan Brown</figcaption> -->
+					<!-- </figure> -->
+				<!-- </a> -->
+			<button class="next" >&#10095;</button>	
 		</div> 
 	</section>	
 	<section class="grid_6 omega" id="author-section">
