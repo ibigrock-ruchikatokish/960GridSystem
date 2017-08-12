@@ -2,11 +2,11 @@
 header{
 	display : flex;
 	height : 100px;
+	width : 100%;
 	flex-basis : fill;
 	flex-wrap : nowrap;
 	flex-direction : row;
 	justify-content : center;
-	width : 100%;
 	position : fixed; 
 	z-index : 2;
 	background-color : white;
@@ -16,11 +16,11 @@ body{
 		background-color : 	white;
 }
 
-header #logo{
+header logo{
 	display : flex;
-	border-left : 0px solid lightgrey;
+	border-left : 0 solid lightgrey;
 	border-right : 0.5px solid lightgrey;
-	border-top : 0px solid lightgrey;
+	border-top : 0 solid lightgrey;
 	border-bottom : 0.2px solid lightgrey;
 	height : inherit;
 	flex-direction : column;
@@ -29,18 +29,19 @@ header #logo{
 	justify-content : center;
 	align-items:center;
 	color : #373737;
+
 }
 
-header #logo h1{
+header #logo p{
 	font-family: Allerta, serif;
 	font-size: 35px;
 }
 
 header #nav{
 	display : inline-flex;
-	border-left : 0px solid;
-	border-right : 0px solid;
-	border-top : 0px solid lightgrey;
+	border-left : 0 solid;
+	border-right : 0 solid;
+	border-top : 0 solid lightgrey;
 	border-bottom : 0.5px solid lightgrey;
 	height : inherit;
 	flex-direction : row;
@@ -56,44 +57,11 @@ header #nav .main-menu{
 	display : flex;
 	flex-direction : row;
 	float : left;
-/*  border: 1px solid lightgrey; */
     cursor: pointer;
 	justify-content:center;
 	align-items:center;
 	font-family: Allerta, serif;
 	font-size : 15px;
-}
-
-/* Sub-Menu-1 Dropdown Content (Hidden by Default) */
-header #nav .sub-menu{
-	list-style-type : none;
-	display : none;
-	position: absolute;
-    width: inherit;
-	background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Sub-Menu-2 Dropdown Content (Hidden by Default) */
-header #nav .sub-sub-menu{
-	list-style-type : none;
-	display : none;
-	position: absolute;
-    width: inherit;
-	background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the Dropdown */
-#ul-sub-menu a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
 }
 
 .main-menu a{ 
@@ -156,34 +124,27 @@ header #nav .sub-sub-menu{
 
 .previous {
 	display : block;
-	/* flex-direction : column; */
     background-color : #B6BECB;
     color : black;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	border: 2px solid #f5f5f5;
-	/* padding: 10px 10px;  */
-	/* justify-content : center;  */
 	z-index : 1;
 }
 
 .next {
 	display : block;
-	/* flex-direction : column; */
     background-color: #B6BECB;
     color: black;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	border: 2px solid #f5f5f5;
-	/* padding: 10px 10px;  */
-	/* justify-content : center; */
 	z-index : 1;
 }
 
 #new-arrival-section{
-/*	background-color : #B6BECB; */
 	height : 700px;
 	display : flex;
 	flex-direction : column;
@@ -214,7 +175,6 @@ header #nav .sub-sub-menu{
 
 #new-arrival-list a:hover{
 	color : grey;
-/*	border :1px solid #B6BECB; */
 	opacity: 0.9;
 }
 
@@ -234,7 +194,6 @@ header #nav .sub-sub-menu{
 
 
 #best-seller-section{
-/*	background-color : #EAECF0; */
 	height : 700px;
 	display : flex;
 	flex-direction : column;
@@ -264,7 +223,6 @@ header #nav .sub-sub-menu{
 
 #best-seller-list a:hover{
 	color : grey;
-/*	border :1px solid #B6BECB; */
 	opacity: 0.9;
 }
 
@@ -294,8 +252,8 @@ header #nav .sub-sub-menu{
 	justify-content : center;
 	align-items : center;
 	font-family: Allerta, serif;
-	margin-left: 0px;
-    margin-right: 0px;
+	margin-left: 0;
+    margin-right: 0;
 }
 
 #our-collection-heading{
@@ -323,7 +281,6 @@ header #nav .sub-sub-menu{
 
 #our-collection-list a:hover{
 	color : grey;
-/*	border :1px solid #B6BECB; */
 	opacity: 0.9;
 }
 
@@ -352,8 +309,8 @@ header #nav .sub-sub-menu{
 	align-items : center;
 	flex-basis : 30%;
 	font-family: Allerta, serif;
-	margin-left: 0px;
-    margin-right: 0px;
+	margin-left: 0;
+    margin-right: 0;
 	
 }
 
@@ -393,8 +350,8 @@ header #nav .sub-sub-menu{
 	flex-wrap : nowrap;
 	justify-content : center;
 	align-items : stretch;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 #write-to-us{
@@ -409,8 +366,8 @@ header #nav .sub-sub-menu{
 	justify-content : center;
 	align-items : center;
 	font-family: Allerta, serif;
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 #write-to-us-heading{
