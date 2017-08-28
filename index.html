@@ -5,11 +5,11 @@
 	<title> 
 		Online Book Store
 	</title>
-	<link rel="stylesheet" href="css/960.css">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/text.css">
+	<link rel="stylesheet" href="css/vendor/960.css">
+	<link rel="stylesheet" href="css/vendor/reset.css">
+	<link rel="stylesheet" href="css/vendor/text.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 	
 	<link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Allerta">	
@@ -21,13 +21,13 @@
 	<!-- Header Begins-->
 	<header>
 		<!-- Logo -->
-		<div id="logo">
+		<div class="logo">
 			<p> La Bibliothèque </p>
 		</div>
 		<!-- Logo Ends -->
 		<!-- Navigation Bar Begins -->
-		<nav id="nav">
-			<ul id="ul-main-menu"> 
+		<nav class="nav">
+			<ul class="ul-main-menu"> 
 				<li class="main-menu"><a href="#about-section-image-1" target="_self"> ABOUT US </a>
 				</li>
 				<li class="main-menu"><a href="#new-arrival-section" target="_self"> NEW ARRIVALS </a>
@@ -47,20 +47,20 @@
 	<!-- Header Ends -->
 	
 	<!-- About Us Begins -->
-	<div class="container_12" id="content-section">
-	<section class="grid_12 clearfix" id="about-section">
-			<img id="about-section-image-1" alt="about-section-image-1" src="images/Books.jpg"/>
-			<img id="about-section-temp-background" src="images/BlackWall.png" alt="about-section-temp-background"/>
-			<h2 id="about-section-image-1-caption"><span>Welcome to the world of books</span></h2>
+	<div class="container_12 content-section">
+	<section class="grid_12 clearfix about-section">
+			<img class="about-section-image-1" id="about-section-image-1" alt="about-section-image-1" src="images/Books.jpg"/>
+			<img class="about-section-temp-background" src="images/BlackWall.png" alt="about-section-temp-background"/>
+			<h2 class="about-section-image-1-caption"><span>Welcome to the world of books</span></h2>
 	</section>
 	<!-- About Us Ends -->
 	<!-- New Arrivals Begin -->
-	<section class="grid_12 clearfix" id="new-arrival-section">
-		<div id="new-arrival-heading">
+	<section class="grid_12 clearfix new-arrival-section" id="new-arrival-section">
+		<div class="new-arrival-heading">
 			<h2>NEW ARRIVALS</h2>
 			<hr>
 		</div>
-		<div id="new-arrival-list">
+		<div class="new-arrival-list">
 			<button class="previous" >&#10094;</button>
 				<a href="#" class="new-arrivals">
 					<figure>
@@ -91,12 +91,12 @@
 	</section>
 	<!-- New Arrivals End -->
 	<!-- Best Sellers Begin -->
-	<section class="grid_12 clearfix" id="best-seller-section">
-		<div id="best-seller-heading">
+	<section class="grid_12 clearfix best-seller-section" id="best-seller-section">
+		<div class="best-seller-heading">
 			<h2>BEST SELLERS</h2>
 			<hr>
 		</div>
-		<div id="best-seller-list">
+		<div class="best-seller-list">
 			<button class="previous" >&#10094;</button>
 				<a href="#" class="best-sellers">
 					<figure>
@@ -133,14 +133,14 @@
 	</section> 
 	<!-- Best Sellers Begin -->
 
-	<div class="grid_12" id="combined-section-1">
+	<div class="grid_12 combined-section-1" id="combined-section-1">
 	<!-- Our Collection Begin -->
-	<section class="grid_6 alpha" id="our-collection-section">
-		<div id="our-collection-heading">
+	<section class="grid_6 alpha our-collection-section">
+		<div class="our-collection-heading">
 			<h2>OUR COLLECTION</h2>	
 			<hr>
 		</div>
-		<div id="our-collection-list">
+		<div class="our-collection-list">
 			<button class="previous" >&#10094;</button>
 				<a href="#" class="our-collection">
 					<figure>
@@ -171,12 +171,12 @@
 	</section>	
 	<!-- Best Sellers Begin -->
 	<!-- Authors Section Begin -->
-	<section class="grid_6 omega clearfix" id="author-section">
-		<div id="author-heading">
+	<section class="grid_6 omega clearfix author-section">
+		<div class="author-heading">
 			<h2>AUTHORS</h2>
 			<hr>
 		</div>
-		<div id="authors-list">
+		<div class="authors-list">
 			<a href="#AgathaChristie" class="authors" >Agatha Christie</a>
 			<a href="#AlanMoore" class="authors" >Alan Moore</a>
 			<a href="#AlbertCamus" class="authors" >Albert Camus</a>
@@ -203,55 +203,55 @@
 	</section>
 	<!-- Authors Section Ends -->
 	</div>
-	<section class="grid_12" id="combined-section-2">
+	<section id="combined-section-2" class="grid_12 combined-section-2">
 	<!-- Map Begins -->
-	<div class="grid_6 alpha" id="map">
+	<div class="grid_6 alpha map">
 			<img src="images/Map.jpg" alt="Map" height="500"/>
 	</div>	
 	<!-- Map Ends -->
 	<!-- Write to Us Begins -->
-	<div class="grid_6 omega clearfix" id="write-to-us">
+	<div class="grid_6 omega clearfix write-to-us">
 	<div>
-		<h2 id="write-to-us-heading">WRITE TO US</h2>
+		<h2 class="write-to-us-heading">WRITE TO US</h2>
 		<hr>
 	</div>
 	<form action="#">
-		Name : <input id="name" type="text" />
-		E-Mail Id : <input id="email" type="email" />
-		Contact No : <input id="tel" type="tel" />
-		Suggestion : <textarea id="suggestion" cols="21" rows="6"> </textarea>
-		<button type="submit">SUBMIT</button>
+		Name : <input class="name" type="text" />
+		E-Mail Id : <input class="email" type="email" />
+		Contact No : <input class="tel" type="tel" />
+		Suggestion : <textarea class="suggestion" cols="21" rows="6"> </textarea>
+		<center><button class= "submit" type="submit">SUBMIT</button></center>
 	</form>
 	</div>
 	<!-- Write to Us Ends -->
 	</section>
 	</div>
 	<!-- Footer Begins -->
-	<footer id="combined-section-3">
+	<footer class="combined-section-3">
 		<div class="container_12">
-			<div class="grid_12" id="footer-section-1">
-				<div class="grid_4 alpha" id="footer-left-section-1">
+			<div class="grid_12 footer-section-1">
+				<div class="grid_4 alpha footer-left-section-1">
 				<strong>HELP</strong>
 				<a href="#">Help Center</a>
 				<a href="#">Item Support</a>
 				</div>
-				<div class="grid_4" id="footer-center-section-1">
+				<div class="grid_4 footer-center-section-1">
 				<strong>JOIN OUR COMMUNITY</strong>
 				<a href="#">Community</a>
 				<a href="#">Blog</a>
 				</div>
-				<div class="grid_4 omega clearfix" id="footer-right-section-1">
+				<div class="grid_4 omega clearfix footer-right-section-1">
 				<p>Sign up to hear about special sales and more delivered to your inbox!</p>
 				<button>SIGN UP</button>
 				</div>
 			</div>
 			<hr>
-			<div class="grid_12" id="footer-section-2">
-				<div class="grid_6 alpha" id="footer-left-section-2">
+			<div class="grid_12 footer-section-2">
+				<div class="grid_6 alpha footer-left-section-2">
 				<span><a href="#">About</a><a href="#">Privacy Policy</a></span>
 				Copyrights ©2017 All Rights Reserved by La Bibliothèque Inc.
 				</div>
-				<div class="grid_6 omega clearfix" id="footer-right-section-2">
+				<div class="grid_6 omega clearfix footer-right-section-2">
 					<a href="#"><i class="fa fa-fw fa-camera-retro fa-2x"></i></a>
 					<a href="#"><i class="fa fa-fw fa-twitter-square fa-2x"></i></a>
 					<a href="#"><i class="fa fa-fw fa-facebook-square fa-2x"></i></a>
